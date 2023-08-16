@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>ScrollMagic</title>
+</head>
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li><a href="#parallax-scroll">Parallax</a></li>
+                    <li><a href="#scroll">Scroll-Triggered</a></li>
+                    <li><a href="#section-1">Fade-in</a></li>
+                    <li><a href="#section-2">Letter reveal</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="parallax-scroll" class="parallax">
+        <img src="parallax_img/bg.jpg" id="bg">
+        <img src="parallax_img/moon.png" id="moon">
+        <img src="parallax_img/mountain.png" id="mountain">
+        <img src="parallax_img/road.png" id="road">
+        <h2 id="text">Parallax efect</h2>
+    </section>
+
+
+    <div id="scroll" class="bcg-scroll-trigger">
+        <div class="bcg"></div>
+        <div class="content-wrapper">
+            <h1>Scroll-Triggered Transform</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+    </div>
+
+    <div id="section-1" class="section">
+        <div class="content-wrapper">
+            <h1 class="text_fade">Fade-in efect</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <img class="side_img_1" src="fade_in_img/img_1.jpg" alt="">
+    </div>
+
+    <div id="section-2" class="section">
+        <img class="side_img_2" src="fade_in_img/img_2.jpg" alt="">
+        <div class="content-wrapper">
+            <h1 class="writhing_text">Letter-by-letter reveal</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js" 
+    integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.19/bundled/lenis.min.js"></script> 
+    
+    <script src="main.js"></script>
+</body>
+</html>
